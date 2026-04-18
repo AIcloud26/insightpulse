@@ -6,31 +6,78 @@
     <title>AI Tools | InsightPulse - 2026 AI Productivity & Trends</title>
     <meta name="description" content="Discover the best AI tools for productivity, content creation, and business in 2026. Get expert reviews and actionable insights.">
     <meta name="keywords" content="AI tools, AI productivity, AI content creation, 2026 AI tools">
-    <link rel="canonical" href="https://你的GitHub用户名.github.io/insightpulse/category/ai-tools.html">
+    <link rel="canonical" href="https://aicloud26.github.io/insightpulse/category/ai-tools.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
     <style>
-        .prose { max-width: 65ch; margin: 0 auto; }
-        .prose img { max-width: 100%; height: auto; }
+        body { font-family: 'Inter', sans-serif; }
+        .text-gradient {
+            background: linear-gradient(90deg, #1E40AF, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .btn-gradient {
+            background: linear-gradient(90deg, #1E40AF, #3B82F6);
+            transition: all 0.3s ease;
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #1E3A8A, #2563EB);
+            transform: scale(1.05);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3B82F6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
     </style>
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-    <!-- 导航栏（和首页一样，无需修改） -->
-    <nav class="sticky top-0 z-50 bg-white shadow-sm backdrop-blur-md bg-opacity-90">
+<body class="bg-white text-gray-800 font-sans">
+    <!-- 导航栏（与首页一致，优化后） -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all 0.3s ease">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-blue-600">InsightPulse</a>
+                    <a href="/" class="flex items-center gap-2 text-2xl font-bold">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                            <path d="M2 17L12 22L22 17" />
+                            <path d="M2 12L12 17L22 12" />
+                        </svg>
+                        <span class="text-gradient">InsightPulse</span>
+                    </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/category/technology.html" class="text-gray-700 hover:text-blue-600 transition-colors">Technology</a>
-                    <a href="/category/finance.html" class="text-gray-700 hover:text-blue-600 transition-colors">Finance</a>
-                    <a href="/category/ai-tools.html" class="text-blue-600 font-medium">AI Tools</a>
-                    <a href="/category/health.html" class="text-gray-700 hover:text-blue-600 transition-colors">Health</a>
+                    <a href="/category/technology.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Technology</a>
+                    <a href="/category/finance.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Finance</a>
+                    <a href="/category/ai-tools.html" class="nav-link text-blue-600 font-medium active">AI Tools</a>
+                    <a href="/category/health.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Health</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <button id="mobile-menu-button" class="text-gray-700 focus:outline-none transition-colors hover:text-blue-600">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
@@ -38,49 +85,51 @@
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="/category/technology.html" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md">Technology</a>
-                <a href="/category/finance.html" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md">Finance</a>
-                <a href="/category/ai-tools.html" class="block px-3 py-2 bg-blue-50 text-blue-600 rounded-md">AI Tools</a>
-                <a href="/category/health.html" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md">Health</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md transition-all 0.3s ease-in-out duration-300">
+            <div class="px-2 pt-2 pb-3 space-y-2">
+                <a href="/category/technology.html" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md nav-link">Technology</a>
+                <a href="/category/finance.html" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md nav-link">Finance</a>
+                <a href="/category/ai-tools.html" class="block px-3 py-2 bg-blue-50 text-blue-600 rounded-md nav-link active">AI Tools</a>
+                <a href="/category/health.html" class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md nav-link">Health</a>
             </div>
         </div>
     </nav>
 
-    <!-- 顶部广告（和首页一样） -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:728px;height:90px"
-             data-ad-client="ca-pub-YOUR_ADSENSE_ID"
-             data-ad-slot="YOUR_TOP_BANNER_SLOT"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+    <!-- 顶部广告位（与首页一致） -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 mt-2">
+        <div class="border border-gray-200 rounded-lg shadow-sm p-1 bg-white">
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:100%;height:90px"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_TOP_BANNER_SLOT"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </div>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <!-- 分类标题 -->
+        <!-- 分类标题优化（渐变文字） -->
         <section class="mb-12">
-            <h1 class="text-3xl md:text-4xl font-bold mb-2 text-gray-900">AI Tools</h1>
+            <h1 class="text-3xl md:text-4xl font-bold mb-2 text-gradient">AI Tools</h1>
             <p class="text-lg text-gray-600">The latest AI tools, reviews, and trends to boost productivity and innovation in 2026.</p>
         </section>
 
-        <!-- 分类文章列表 -->
-        <section id="category-feed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 分类文章列表（与首页卡片风格一致） -->
+        <section id="category-feed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- 自动加载AI分类的文章 -->
         </section>
 
         <div class="text-center mt-12">
-            <button id="load-more" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors">
+            <button id="load-more" class="btn-gradient text-white px-8 py-3 rounded-lg font-medium">
                 Load More Posts
             </button>
         </div>
     </main>
 
-    <!-- 底部固定广告 -->
-    <div id="anchor-ad" class="fixed bottom-0 left-0 right-0 bg-white shadow-lg p-2 z-40">
-        <button id="close-anchor-ad" class="absolute top-1 right-2 text-gray-500 hover:text-gray-700">×</button>
+    <!-- 底部锚点广告（与首页一致） -->
+    <div id="anchor-ad" class="fixed bottom-0 left-0 right-0 bg-white shadow-lg p-2 z-40 transition-all 0.3s ease">
+        <button id="close-anchor-ad" class="absolute top-1 right-2 text-gray-500 hover:text-blue-600 bg-gray-100 rounded-full w-6 h-6 flex items-center justify-center transition-colors">×</button>
         <ins class="adsbygoogle"
              style="display:inline-block;width:100%;height:90px"
              data-ad-client="ca-pub-YOUR_ADSENSE_ID"
@@ -90,38 +139,47 @@
         </script>
     </div>
 
-    <footer class="bg-gray-100 py-8 mt-16">
+    <!-- 底部（与首页一致） -->
+    <footer class="bg-gray-50 py-12 mt-16 rounded-t-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center text-gray-600">
-                <p>&copy; 2026 InsightPulse. All rights reserved.</p>
-                <p class="mt-2"><a href="/sitemap.xml" class="text-blue-600 hover:underline">Sitemap</a> | <a href="/privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a></p>
+                <a href="/" class="inline-block mb-4">
+                    <span class="text-gradient text-2xl font-bold">InsightPulse</span>
+                </a>
+                <p class="mb-2">&copy; 2026 InsightPulse. All rights reserved.</p>
+                <p><a href="/sitemap.xml" class="text-blue-600 hover:underline">Sitemap</a> | <a href="/privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- 分类页面JS（无需修改） -->
+    <!-- 分类页面JS（保留功能，优化动画） -->
     <script>
-        // 手机菜单
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+            } else {
+                mobileMenu.style.maxHeight = '0';
+            }
         });
 
-        // 关闭底部广告
         const closeAnchorAd = document.getElementById('close-anchor-ad');
         const anchorAd = document.getElementById('anchor-ad');
         closeAnchorAd.addEventListener('click', () => {
-            anchorAd.style.display = 'none';
+            anchorAd.style.opacity = '0';
+            setTimeout(() => {
+                anchorAd.style.display = 'none';
+            }, 300);
         });
 
-        // 加载AI分类的文章
         let posts = [];
         let currentPage = 1;
         const postsPerPage = 6;
         const categoryFeed = document.getElementById('category-feed');
         const loadMoreButton = document.getElementById('load-more');
-        const category = 'ai-tools'; // 固定为ai-tools，不要改
+        const category = 'ai-tools';
 
         fetch('/data/posts.json')
             .then(response => response.json())
@@ -137,10 +195,9 @@
             const postsToRender = posts.slice(startIndex, endIndex);
 
             postsToRender.forEach((post, index) => {
-                // 每5篇插入原生广告
                 if ((startIndex + index + 1) % 5 === 0) {
                     const adDiv = document.createElement('div');
-                    adDiv.className = 'col-span-1 md:col-span-2 lg:col-span-3 p-4 bg-white rounded-lg shadow-sm';
+                    adDiv.className = 'col-span-1 md:col-span-2 lg:col-span-3 p-4 bg-white rounded-lg shadow-sm border border-gray-200';
                     adDiv.innerHTML = `
                         <ins class="adsbygoogle"
                              style="display:block"
@@ -158,10 +215,10 @@
 
                 const postImage = post.image || `https://source.unsplash.com/random/600x400/?${post.category}`;
                 const postDiv = document.createElement('div');
-                postDiv.className = 'bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow';
+                postDiv.className = 'bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100';
                 postDiv.innerHTML = `
                     <a href="/posts/${post.slug}.html" class="block">
-                        <img src="${postImage}" alt="${post.title}" class="w-full h-48 object-cover">
+                        <img src="${postImage}" alt="${post.title}" class="w-full h-48 object-cover rounded-t-lg">
                         <div class="p-6">
                             <span class="inline-block px-3 py-1 text-xs font-semibold bg-blue-100 text-blue-800 rounded-full mb-3">
                                 ${post.category.charAt(0).toUpperCase() + post.category.slice(1).replace('-', ' ')}
